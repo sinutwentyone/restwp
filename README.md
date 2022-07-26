@@ -17,3 +17,19 @@ load the required files in <code>functions.php</code>
   require_once get_template_directory() . '/libs/rest/main.php';
   ?>
 ```
+
+<h2>API</h2>
+
+```php
+  use Sione\REST\Route;
+  
+  Route::use( <namespace:string> )
+```
+
+<h4>Usage</h4>
+
+```php
+  use Sione\REST\Route;
+  
+  Route::use( "your_theme_or_plugin_namespace" )
+```
