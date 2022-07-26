@@ -127,7 +127,7 @@ Access with jQuery
       // Go to next middleware
       return $next( $request );
     } else {     
-      return new \WP_Error( 'Unauthorized', 'You can\'t access, you can\'t edit theme', [ 'status' => 403 ] );
+      return new WP_Error( 'Unauthorized', 'You can\'t access, you can\'t edit theme', [ 'status' => 403 ] );
     }
   }
   
