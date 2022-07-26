@@ -41,7 +41,7 @@ load the required files in <code>functions.php</code>
     public function get( $request : WP_Rest_Request ) {
       // cook your response data
   
-      return "Hello There";
+      return rest_ensure_response( "Hello There" );
     }
   }
   
