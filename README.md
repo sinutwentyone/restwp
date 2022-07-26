@@ -45,13 +45,13 @@ load the required files in <code>functions.php</code>
   
   Route::use( "restwp" )
   
-  Route::get( "get_posts", [ new GetPostsController, "get" ] )
+  Route::get( "my_posts", [ new GetPostsController, "get" ] )
 ```
 
 Access with jQuery
 
 ```typescript
-  $.ajax( "your-wordpress-rest-route/restwp/get_posts", {
+  $.ajax( "your-wordpress-rest-route/restwp/my_posts", {
     method: "get",
     success: ( response: string ) => {
       console.log( response ) 
