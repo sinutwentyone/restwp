@@ -92,7 +92,7 @@ Access with jQuery
     method: "post",
     data: {
       post_title: "Hello There",
-      post_content: "Hello world
+      post_content: "Hello world"
     }
   })
 ```
