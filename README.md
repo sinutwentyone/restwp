@@ -1,4 +1,6 @@
 # restwp
+<h1>REST WP V 1.0.0</h1>
+
 Wordpress REST utility.
 
 <p>
