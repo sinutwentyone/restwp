@@ -1,5 +1,5 @@
 # restwp
-Wordpress REST endpoint creation with middleware.
+Wordpress REST utility.
 
 <p>
 Separating your WP REST endpoints with their permissions and controller.
