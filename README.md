@@ -38,7 +38,7 @@ load the required files in <code>functions.php</code>
 ```php
   use Sione\REST\Route;
   
-  class GetPostsController {    
+  class MyPostsController {    
     public function get( $request : WP_REST_Request ) {
       return rest_ensure_response( "Hello There" );
     }
@@ -46,7 +46,7 @@ load the required files in <code>functions.php</code>
   
   Route::use( "restwp" )
   
-  Route::get( "my_posts", [ new GetPostsController, "get" ] )
+  Route::get( "my_posts", [ new MyPostsController, "get" ] )
 ```
 
 Access with jQuery
@@ -69,7 +69,7 @@ Access with jQuery
 ```php
   use Sione\REST\Route;
   
-  class GetPostsController {    
+  class MyPostsController {    
     public function get( $request = WP_REST_Request ) {
       return rest_ensure_response( "Hello There" );
     }
@@ -83,7 +83,7 @@ Access with jQuery
   
   Route::use( "restwp" )
   
-  Route::post( "my_posts", [ new GetPostsController, "createPost" ] )
+  Route::post( "my_posts", [ new MyPostsController, "createPost" ] )
 ```
 
 Access with jQuery
@@ -111,7 +111,7 @@ Access with jQuery
 ```php
   use Sione\REST\Route;
   
-  class GetPostsController {    
+  class MyPostsController {    
     public function get( $request = WP_REST_Request ) {
       return rest_ensure_response( "Hello There" );
     }
@@ -134,7 +134,7 @@ Access with jQuery
   
   Route::use( "restwp" )
   
-  Route::post( "my_posts", [ new GetPostsController, "createPost" ] )
+  Route::post( "my_posts", [ new MyPostsController, "createPost" ] )
   ->middleware( [ 'user_can_edit_theme_options' ] );
   
 ```
