@@ -50,3 +50,16 @@ load the required files in <code>functions.php</code>
   Route::get( "get_posts", [ new GetPostsController, "get" ] )
 ```
 
+Access with jQuery
+
+```javascript
+  $.ajax( "your-wordpress-rest-route/restwp/get_posts", {
+    method: "get",
+    success: ( response: string ) => {
+      console.log( response ) 
+      // Hello There
+    }
+  })
+```
+
+
