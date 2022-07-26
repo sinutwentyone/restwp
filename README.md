@@ -52,7 +52,7 @@ load the required files in <code>functions.php</code>
 
 Access with jQuery
 
-```javascript
+```typescript
   $.ajax( "your-wordpress-rest-route/restwp/get_posts", {
     method: "get",
     success: ( response: string ) => {
