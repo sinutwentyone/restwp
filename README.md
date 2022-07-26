@@ -20,13 +20,15 @@ load the required files in <code>functions.php</code>
 
 <h2>API</h2>
 
+<h4><code>Route::use</code></h4>
+
 ```php
   use Sione\REST\Route;
   
   Route::use( <namespace:string> )
 ```
 
-<h4>Usage</h4>
+<h5>Usage</h5>
 
 ```php
   use Sione\REST\Route;
