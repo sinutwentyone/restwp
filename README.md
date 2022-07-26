@@ -10,3 +10,10 @@ I just want to separate things between Endpoint Registration, Controller, and Mi
 <h2>Getting Started</h2>
 
 load the required files in <code>functions.php</code> 
+
+<pre>
+<?php
+  require_once get_template_directory() . '/sione/utilities/main.php';
+  require_once get_template_directory() . '/sione/enqueue/main.php';
+  require_once get_template_directory() . '/sione/rest/main.php';
+</pre>
