@@ -11,7 +11,6 @@ I just want to separate things between Endpoint Registration, Controller, and Mi
 
 load the required files in <code>functions.php</code> 
 
-<pre>
 ```php
 // functions.php
 <?php
@@ -20,4 +19,3 @@ load the required files in <code>functions.php</code>
   require_once get_template_directory() . '/sione/rest/main.php';
   ?>
 ```
-</pre>
