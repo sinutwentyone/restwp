@@ -16,4 +16,5 @@ load the required files in <code>functions.php</code>
   require_once get_template_directory() . '/sione/utilities/main.php';
   require_once get_template_directory() . '/sione/enqueue/main.php';
   require_once get_template_directory() . '/sione/rest/main.php';
+  ?>
 </pre>
