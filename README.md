@@ -29,3 +29,24 @@ load the required files in <code>functions.php</code>
   
   Route::use( "your_theme_or_plugin_namespace" )
 ```
+
+<h4><code>Route::get< endpoint:string, controller:callable ></code></h4>
+  
+<h5>Usage</h5>
+
+```php
+  use Sione\REST\Route;
+  
+  class GetPostsController {    
+    public function get( $request : WP_Rest_Request ) {
+      // cook your response data
+  
+      return "Hello There";
+    }
+  }
+  
+  Route::use( "restwp" )
+  
+  Route::get( "get_posts", [ new GetPostsController, "get" ] )
+```
+
