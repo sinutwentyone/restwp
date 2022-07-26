@@ -60,4 +60,41 @@ Access with jQuery
   })
 ```
 
+<h4><code>Route::post< endpoint:string, controller:callable ></code></h4>
+  
+<h5>Usage</h5>
+
+
+```php
+  use Sione\REST\Route;
+  
+  class GetPostsController {    
+    public function get( $request = WP_REST_Request ) {
+      return rest_ensure_response( "Hello There" );
+    }
+  
+    public function createPost( $request = WP_REST_Request ) {
+        $post_data = $request->get_params();
+  
+        wp_insert_post( $post_data );
+    }
+  }
+  
+  Route::use( "restwp" )
+  
+  Route::post( "my_posts", [ new GetPostsController, "createPost" ] )
+```
+
+Access with jQuery
+
+```typescript
+  $.ajax( "your-wordpress-rest-route/restwp/my_posts", {
+    method: "post",
+    data: {
+      post_title: "Hello There",
+      post_content: "Hello world
+    }
+  })
+```
+
 
