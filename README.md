@@ -38,7 +38,7 @@ load the required files in <code>functions.php</code>
   use Sione\REST\Route;
   
   class GetPostsController {    
-    public function get( $request : WP_Rest_Request ) {
+    public function get( $request : WP_REST_Request ) {
       return rest_ensure_response( "Hello There" );
     }
   }
