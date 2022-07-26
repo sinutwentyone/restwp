@@ -99,11 +99,11 @@ Access with jQuery
 
 <h2>Adding Middleware</h2>
   
-  <h4>Method::middleware<middlewares:callables[]></h4>
+<h4>Method::middleware<middlewares:callables[]></h4>
     
-    <code>return : <WP_REST_Request|other></code>
+<code>return : WP_REST_Request|other</code>
     
-    <p>If <code>return</code> is not <code>instanceof WP_REST_Request</code>. the <code>return</code> will be returned immediately as response.</p>
+<p>If <code>return</code> is not <code>instanceof WP_REST_Request</code>. the <code>return</code> will be returned immediately as response.</p>
   
   <h5>Usage</h5>
   
